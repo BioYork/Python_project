@@ -35,7 +35,7 @@ for n in range(0, 10001):
 ```python
 for n in range(0, 10001):
     a = 0
-    for i in range(1, int((n / 2 + 1))):
+    for i in range(1, int(n / 2 + 1)):
         if n % i == 0:
             a = a + i
     if n == a:
@@ -66,7 +66,7 @@ for num in range(1, 10000):
 #变换前：
 for i in range(1, num):
 #变换后：
-for i in range(1, int((num / 2 + 1))):    
+for i in range(1, int(num / 2 + 1)):    
 ```
 
 运行效率简直是质的提升，几乎没有卡顿的感觉。调用python3 的time模块分别计算一下各个程序的运行时间：
@@ -93,7 +93,7 @@ start = time.perf_counter()
 #求余过程减半后
 for n in range(0, 10001):
     a = 0
-    for i in range(1, int((n / 2 + 1))):
+    for i in range(1, int(n / 2 + 1)):
         if n % i == 0:
             a = a + i
     if n == a:
@@ -126,7 +126,7 @@ start = time.perf_counter()
 #求余过程减半后
 def fun2(num):
     list1 = []
-    for i in range(1, int((num / 2 + 1))):
+    for i in range(1, int(num / 2 + 1)):
         if num % i == 0:
             list1.append(i)
     return list1
