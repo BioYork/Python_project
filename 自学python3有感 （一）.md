@@ -190,7 +190,7 @@ AttributeError: module 'time' has no attribute 'clock'
 仔细查看，time.colck()是Python3.6的方法函数，Python 3.8 已移除 clock() 方法 ，又去查看了Python文档，才找到time.perf_counter()。
 
 
-
+转载请告知，注明出处。
 
 
 
